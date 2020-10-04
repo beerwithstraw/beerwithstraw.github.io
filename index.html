@@ -719,7 +719,6 @@
         </div>
       </div>
 
-	<div id="form">
       <form action="forms/contact.php" id="myforms" method="post" role="form" class="php-email-form mt-4">
         <div class="form-row">
           <div class="col-md-6 form-group">
@@ -744,13 +743,10 @@
           <div class="error-message"></div>
           <div class="sent-message">Your message has been sent. Thank you!</div>
         </div>
-        <div class="text-center"><button type="submit" onClick="sendEmail()">Send Message</button></div>
-
+        <div class="text-center"><button type="submit">Send Message</button></div>
       </form>
-	  <a id="mylink" href="#"> </a>
-	</div>	
-    </div>
 
+    </div>
   </section><!-- End Contact Section -->
 
   <div class="credits">
@@ -758,7 +754,7 @@
     <!-- You can delete the links only if you purchased the pro version. -->
     <!-- Licensing information: https://bootstrapmade.com/license/ -->
     <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
-    <p style="color:black">Designed by <a href="https://bootstrapmade.com/" style="color:black">BootstrapMade</a></p>
+    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
   </div>
 
   <!-- Vendor JS Files -->
@@ -774,41 +770,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-		<script>
-			function sendEmail() {
-				        var  str = "name: " + document.form.myforms.name.value + "\n" + "email: " + document.form.myforms.email.value + "\n" + "Subject: " + document.form.myforms.subject.value + "\n" +
-						"Message: " + document.form.myforms.message.value;      
-						var link = document.getElementById("mylink");
-						link.href="/mailto:pulkita461@gmail.com?subject=form submittion&body=" + str;
-						clickLink(link);
-						return false;
-					} 
-			function clickLink(link) {
 
-				if (isIE())
-					{
-						link.click();
-						return;
-					}
-				else if (document.createEvent)
-					{
-						var e = document.createEvent('MouseEvents');
-						e.initEvent(
-							'click'     // event type
-							,true      // can bubble?
-							,true      // cancelable?
-						);
-						var allowDefaultAction = link.dispatchEvent(e);           
-					}
-
-				}
-
-			function isIE () {
-				var myNav = navigator.userAgent.toLowerCase();
-				return (myNav.indexOf('msie') != -1) ? true : false;
-				}
-
-		</script>	
 </body>
 
 </html>
