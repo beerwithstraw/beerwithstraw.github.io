@@ -1,3 +1,3 @@
-# Personal Portfolio
+# Personal Portfolio Website
 
-## [Visit Website Here](https://beerwithstraw.github.io)
+## [Live Website](https://beerwithstraw.github.io)
